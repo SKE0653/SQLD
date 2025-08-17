@@ -11,3 +11,14 @@ TO_NUMBER(TO_CHAR(d,'DD')) / DAY(d)
   SQL Server DEPART YEAR/MONTH/DAY 옵션과 같은 기능.
   TO_NUMBER 함수 제외 시 문자형으로 출력된다.*/
 
+  
+select decode(col1,'A', 1, B',2,3) from dual;
+ -- col이 A면 1, B면 2, 아니면 3
+
+case  when col = 'A' then 1
+      when col = 'B' then 2
+      else 3 end; 
+case col  when 'A' then 1
+          when 'B' then 2
+          else 3 end;
+
